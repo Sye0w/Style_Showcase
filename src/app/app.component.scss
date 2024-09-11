@@ -1,0 +1,16 @@
+@import '../styles.scss';
+
+body{
+  width: 100%;
+  font-family: $bodyfont,sans-serif;
+}
+
+#container{
+  min-height: 100vh;
+  border: 1px solid #ccc;
+  padding-inline: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

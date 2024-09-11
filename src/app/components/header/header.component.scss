@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+header{
+  h1{
+    font-family: $headerfont,system-ui;
+    font-weight: 600;
+    // font-size: calc(30px / $base-fontsize) * 1rem;
+  }
+}
+
