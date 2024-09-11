@@ -5,17 +5,15 @@ header {
   height: calc(570px / 16px) * 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: calc(230px / 16px) * 1rem;
+  justify-content: between;
   position: relative;
   background-image: url('../../../assets/images/banner-dark.jfif');
-  background-position: center;
+  // background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   overflow: hidden;
   color: #fff;
-
-  
 
   &::before {
     content: '';
@@ -83,6 +81,8 @@ header {
       z-index: 1;
     }
   }
+
+
 }
 
 

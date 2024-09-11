@@ -1,10 +1,22 @@
-div{
-  .theme-container{
+
+.theme-container{
+  position: relative;
+  display: flex;
+  justify-self: start;
+  justify-content: end;
+
+  button{
+    cursor: pointer;
+    margin-top: calc(30px/16px ) * 1rem;
+    margin-right: calc(30px/16px ) * 1rem;
+    background: none;
+    border: none;
+    width: auto !important;
     svg{
       width: 20px;
     }
   }
-
-
-  z-index: 1;
 }
+
+
+
