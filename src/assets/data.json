@@ -1,0 +1,27 @@
+[
+  {
+    "image": "../assets/images/define-img1.jfif",
+    "desc": "In the Define stage, the goal is to clearly articulate the problem you're trying to solve. This involves synthesizing the information gathered during the Empathize stage to define the core challenges.",
+    "name": "Define"
+  },
+  {
+      "image": "../assets/images/empathize-img.jfif",
+      "desc": "The Empathize stage focuses on understanding the user's needs through research and observation. Designers gather insights to build empathy for the users they are designing for.",
+      "name": "Empathize"
+  },
+  {
+      "image": "../assets/images/ideate.jfif",
+      "desc": "During the Ideate stage, designers brainstorm a wide range of ideas and solutions. The focus is on generating creative possibilities that address the problem defined earlier.",
+      "name": "Ideate"
+  },
+  {
+      "image": "../assets/images/prototype-img.jfif",
+      "desc": "In the Prototype stage, designers create scaled-down versions of the product or features to explore and validate different solutions. Prototypes help in visualizing and testing ideas.",
+      "name": "Prototype"
+  },
+  {
+      "image": "../assets/images/test.jfif",
+      "desc": "The Test stage involves user testing and gathering feedback on the prototypes. Designers refine the solutions based on real user experiences to ensure the final product meets the users' needs.",
+      "name": "Test"
+  }
+]
