@@ -1,0 +1,14 @@
+// Common Styles for all text elements
+%text-center {
+  text-align: center;
+}
+
+%text-white {
+  color: $white-color;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

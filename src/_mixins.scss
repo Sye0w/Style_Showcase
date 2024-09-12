@@ -1,0 +1,22 @@
+@use 'sass:math'; // Import the math module
+
+// Flexbox Layout Mixin
+@mixin flex-layout($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Button Reset Mixin
+@mixin button-reset {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+// Rem Calculation Function
+@function rem($px-value) {
+  @return math.div($px-value, 16) * 1rem;
+}
