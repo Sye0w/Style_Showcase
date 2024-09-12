@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ThemeSwitchService } from '../../service/theme-switch.service';
+import { ThemeSwitchService } from '../../model/services/theme-switch.service';
 
 
 @Component({

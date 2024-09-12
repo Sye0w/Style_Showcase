@@ -1,0 +1,21 @@
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: calc(42px / 16px) * 1rem;
+  li{
+    list-style-type: none;
+    border: 1px solid #99a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+      font-size: calc(230px / 16px) * 1rem;
+      font-weight: 900;
+    }
+    
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}

@@ -1,13 +1,20 @@
 @import '../styles.scss';
 
 
+body {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #C8CFF1;
 
+  #container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-#container{
-  min-height: 100vh;
-  // padding-inline: 1.25rem;
-  display: flex;
-  // margin-top: 2rem;
-  flex-direction: column;
-  align-items: center;
+  &.dark-theme {
+    background-color: #162030;
+    color: #fff;
+  }
 }
+

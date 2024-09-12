@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ThemeSwitchComponent } from "../theme-switch/theme-switch.component";
-import { ThemeSwitchService } from '../../service/theme-switch.service';
+import { ThemeSwitchService } from '../../model/services/theme-switch.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
