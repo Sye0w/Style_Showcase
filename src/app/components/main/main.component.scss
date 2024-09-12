@@ -8,7 +8,7 @@ main{
   flex-direction: column;
   gap: calc(48px / 16px) * 1rem;
 
-  
+
 
   h3{
     // color: #fff;
@@ -20,4 +20,9 @@ main{
 
 }
 
+@media (max-width: 768px) {
+  main{
+    padding-inline: 2rem;
+  }
+}
 

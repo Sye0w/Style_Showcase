@@ -3,23 +3,24 @@
 section{
   font-family: $bodyfont;
   padding-inline: 5rem;
+  display: flex;
+  flex-direction: column;
   padding-top: calc(35px/16px) * 1rem;
   width: 100%;
-  height: calc(250px/16px) * 1rem;
   background-color: #000;
   display: flex;
   color: #fff;
 
+
+
   ul{
     list-style-type: none;
     display: flex;
+    width: 18rem;
     align-items: center;
-    gap: calc(35px/16px) * 1rem;
-    width: auto;
-    padding: 0;
-    margin-right: 27rem;      
-    margin-bottom: 3rem;      
-    
+    padding-block: calc(45px/16px) * 1rem;
+
+
     a{
       color: #fff;
       text-decoration: none;
@@ -44,4 +45,19 @@ section{
     }
 
   }
+}
+
+
+@media (max-width: 768px) {
+  section{
+    padding-inline: 2rem;
+    
+    h4{
+      font-size: .8rem;
+    }
+
+
+  }
+
+
 }

@@ -27,7 +27,7 @@ ul{
       }
     }
 
-    
+
 
     .li-txt-grp-2{
       font-size: calc(230px / 16px) * 1rem;
@@ -36,18 +36,28 @@ ul{
       font-size: calc(230px / 16px) * 1rem;
       font-weight: 900;
       font-family: $titlefont;
-      background-size: cover; 
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent; 
+      -webkit-text-fill-color: transparent;
       text-align: center;
     }
-    
+
     &:nth-child(1) {
       flex-direction: row-reverse;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  li{
+    flex-direction: column;
+
+    &:nth-child(1) {
+      flex-direction: column !important;
     }
   }
 }
