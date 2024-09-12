@@ -1,0 +1,47 @@
+@import '../../../styles';
+
+section{
+  font-family: $bodyfont;
+  padding-inline: 5rem;
+  padding-top: calc(35px/16px) * 1rem;
+  width: 100%;
+  height: calc(250px/16px) * 1rem;
+  background-color: #000;
+  display: flex;
+  color: #fff;
+
+  ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: calc(35px/16px) * 1rem;
+    width: auto;
+    padding: 0;
+    margin-right: 27rem;      
+    margin-bottom: 3rem;      
+    
+    a{
+      color: #fff;
+      text-decoration: none;
+
+      .logo-bg{
+        width: calc(80px/16px) * 1rem;
+        height: calc(60px/16px) * 1rem;
+        background-color: #fff;
+        border-radius: .625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: calc(10px/16px) * 1rem;
+        transition: background-color 0.3s ease;
+      }
+    }
+
+    li{
+      img{
+        width: calc(54px/16px) * 1rem;
+      }
+    }
+
+  }
+}
