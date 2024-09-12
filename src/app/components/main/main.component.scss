@@ -2,6 +2,7 @@
 
 main{
   padding-top: calc(30px/16px) * 1rem;
+  font-family: $bodyfont;
   padding-inline: 5rem;
   display: flex;
   flex-direction: column;
@@ -10,10 +11,11 @@ main{
   h3{
     // color: #fff;
     text-align: center;
+    font-size: calc(16px/16px) * 1rem;
     font-family: $titlefont;
   }
 
-  
+
 }
 
 

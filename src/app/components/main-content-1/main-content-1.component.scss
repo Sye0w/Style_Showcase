@@ -1,17 +1,52 @@
+@import '../../../styles';
+
 ul{
   display: flex;
   flex-direction: column;
   gap: calc(42px / 16px) * 1rem;
+  align-items: center;
+
   li{
     list-style-type: none;
     border: 1px solid #99a;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: calc(50px/16px) * 1rem;
 
-    h1{
+    .li-txt-grp{
+      display: flex;
+      flex-direction: column;
+      gap: calc(45px/16px) * 1rem;
+      width: auto;
+
+      .li-head{
+
+        h3{
+          font-family: $titlefont;
+          font-weight: 600;
+          font-size: calc(32px/16px) * 1rem;
+          
+        }
+      }
+    }
+
+    
+
+    .li-txt-grp-2{
       font-size: calc(230px / 16px) * 1rem;
       font-weight: 900;
+      font-family: $titlefont;
+      font-size: calc(230px / 16px) * 1rem;
+      font-weight: 900;
+      font-family: $titlefont;
+      background-size: cover; 
+      background-position: center;
+      background-repeat: no-repeat;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      text-align: center;
     }
     
     &:nth-child(even) {
