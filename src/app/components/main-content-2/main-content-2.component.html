@@ -1,1 +1,17 @@
-<p>main-content-2 works!</p>
+<ul>
+  @if( remainingItems$ | async; as items  ){
+    @for( item of items; track item.title; let i = $index){
+      <li >
+        <div class="li-txt-grp">
+          <div class="li-head">
+            <h3>{{ item.title }}</h3>
+          </div>
+          <p>{{ item.desc }}</p>
+        </div>
+        <div class="li-txt-grp-2" style="background-image:url('{{item.image}}');">
+          0{{ i + 4}}
+        </div>
+      </li>
+    }
+  }
+</ul>

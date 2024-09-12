@@ -1,12 +1,14 @@
 @import '../../../styles.scss';
 
 main{
-  padding-top: calc(30px/16px) * 1rem;
+  padding-top: calc(35px/16px) * 1rem;
   font-family: $bodyfont;
   padding-inline: 5rem;
   display: flex;
   flex-direction: column;
+  gap: calc(48px / 16px) * 1rem;
 
+  
 
   h3{
     // color: #fff;
