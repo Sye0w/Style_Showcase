@@ -3,19 +3,20 @@
 ul{
   display: flex;
   flex-direction: column;
-  gap: calc(42px / 16px) * 1rem;
+  gap: rem(42px);
   align-items: center;
 
   li{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: calc(50px/16px) * 1rem;
+    @extend .base-li;
+
+    &.darkmode{
+      border-bottom: 1px solid $dark-border-color;
+    }
 
     .li-txt-grp{
       display: flex;
       flex-direction: column;
-      gap: calc(45px/16px) * 1rem;
+      gap: rem(38px);
       width: auto;
 
       .li-head{
@@ -23,7 +24,7 @@ ul{
         h3{
           font-family: $titlefont;
           font-weight: 600;
-          font-size: calc(32px/16px) * 1rem;
+          font-size: rem(32px);
         }
       }
     }
@@ -31,20 +32,7 @@ ul{
 
 
     .li-txt-grp-2{
-      font-size: calc(230px / 16px) * 1rem;
-      font-weight: 900;
-      font-family: $titlefont;
-      font-size: calc(230px / 16px) * 1rem;
-      font-weight: 900;
-      font-family: $titlefont;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
+      @include li-txt-grp-2-style(230px, 900, $titlefont)
     }
 
     &:nth-child(even) {

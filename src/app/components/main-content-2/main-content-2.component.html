@@ -1,7 +1,7 @@
 <ul>
   @if( remainingItems$ | async; as items  ){
     @for( item of items; track item.title; let i = $index){
-      <li >
+      <li [ngClass]="{'darkmode':themeMode}">
         <div class="li-txt-grp">
           <div class="li-head">
             <h3>{{ item.title }}</h3>

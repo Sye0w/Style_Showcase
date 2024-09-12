@@ -1,16 +1,16 @@
 <ul>
   @if( firstThreeItems$ | async; as items  ){
     @for( item of items; track item.title; let i = $index){
-      <li >
+      <li  [ngClass]="{'darkmode':themeMode}">
         <div class="li-txt-grp">
           <div class="li-head">
             <h3>{{ item.title }}</h3>
           </div>
           <p>{{ item.desc }}</p>
         </div>
-        <div class="li-txt-grp-2" style="background-image:url('{{item.image}}');">
+        <h2 class="li-txt-grp-2" style="background-image:url('{{item.image}}');">
           0{{ i + 1}}
-        </div>
+        </h2>
       </li>
     }
   }

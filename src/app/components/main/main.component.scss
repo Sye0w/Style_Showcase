@@ -1,11 +1,12 @@
 @import '../../../styles.scss';
 
 main{
-  padding-top: calc(35px/16px) * 1rem;
+  padding-top: rem(35px);
+  padding-bottom: rem(35px);
   font-family: $bodyfont;
   display: flex;
   flex-direction: column;
-  gap: calc(48px / 16px) * 1rem;
+  gap: rem(48px);
   justify-content: center;
 
   div{
@@ -15,9 +16,9 @@ main{
     .main{
       display: flex;
       flex-direction: column;
-      gap: calc(48px / 16px) * 1rem;
+      gap: rem(48px);
       padding-inline: 5rem;
-      // width: 80%;
+      width: 75%;
     }
 
   }
@@ -35,7 +36,12 @@ main{
 
 @media (max-width: 768px) {
   main{
-    padding-inline: 2rem;
+    div{
+      .main{
+        padding-inline: 2rem;
+        width: 100%;
+      }
+    }
   }
 }
 

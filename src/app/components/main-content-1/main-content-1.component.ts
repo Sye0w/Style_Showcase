@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DataService } from '../../model/services/data.service';
 import { CommonModule } from '@angular/common';
+import { ThemeSwitchService } from '../../model/services/theme-switch.service';
 
 @Component({
   selector: 'app-main-content-1',
@@ -12,10 +13,14 @@ import { CommonModule } from '@angular/common';
 
 export class MainContent1Component {
   firstThreeItems$ = this.dataService.getFirstThreeItems()
+  themeMode: boolean = false;
 
-  constructor(private dataService: DataService ){}
+  constructor(private dataService: DataService,
+    private themeService: ThemeSwitchService
+  ){}
 
   ngOnInit(){
     this.dataService.loadData()
+    this.themeService.theme$.subscribe(mode  => this.themeMode = mode);
   }
 }

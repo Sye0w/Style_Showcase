@@ -1,0 +1,16 @@
+
+
+@mixin li-txt-grp-2-style($font-size,$font-weight, $font-family){
+  font-size: rem($font-size);
+  font-weight: $font-weight;
+  font-family: $font-family;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  
+}
