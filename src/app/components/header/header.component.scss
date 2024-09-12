@@ -17,11 +17,10 @@ header {
   &.dark-theme{
     background-image: url('../../../assets/images/banner-dark.jfif');
     filter: brightness(0.5);
-    color: #fff;
+    color: #fff !important;
   }
 
-  &::before {
-    content: '';
+  .glass-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,6 +87,7 @@ header {
       font-size: calc(40px / 16px) * 1rem;
       font-weight: 600;
       position: relative;
+      color: #fff !important;
       z-index: 1;
     }
   }
