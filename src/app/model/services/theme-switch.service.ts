@@ -4,14 +4,30 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-
 export class ThemeSwitchService {
-  themeSubject = new BehaviorSubject<boolean>(false);
+  private readonly THEME_KEY = 'isDarkTheme'; 
+  themeSubject = new BehaviorSubject<boolean>(this.getSavedTheme());
   theme$ = this.themeSubject.asObservable();
 
-  constructor() { }
+  constructor() {
+    const savedTheme = this.getSavedTheme();
+    this.themeSubject.next(savedTheme);
+  }
 
   toggleTheme() {
-    this.themeSubject.next(!this.themeSubject.value);
+    const newTheme = !this.themeSubject.value;
+    this.themeSubject.next(newTheme);
+    this.saveTheme(newTheme);
+  }
+
+
+  private getSavedTheme(): boolean {
+    const storedTheme = localStorage.getItem(this.THEME_KEY);
+    return storedTheme !== null ? JSON.parse(storedTheme) : false;
+  }
+
+
+  private saveTheme(isDarkTheme: boolean): void {
+    localStorage.setItem(this.THEME_KEY, JSON.stringify(isDarkTheme));
   }
 }
