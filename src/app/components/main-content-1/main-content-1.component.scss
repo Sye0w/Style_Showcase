@@ -9,6 +9,13 @@ ul{
   li{
     @extend .base-li;
 
+
+
+    &.revealed {
+      opacity: 1;
+      transform: translateX(-0);
+    }
+
     &.darkmode{
       border-bottom: 1px solid $dark-border-color;
     }
