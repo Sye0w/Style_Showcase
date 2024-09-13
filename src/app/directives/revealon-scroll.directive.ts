@@ -12,7 +12,6 @@ export class RevealOnScrollDirective implements AfterViewInit {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           this.renderer.addClass(this.el.nativeElement, 'revealed');
-          observer.unobserve(this.el.nativeElement);
         }
       });
     }, { threshold: 0.1 });
