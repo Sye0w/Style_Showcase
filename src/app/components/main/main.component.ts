@@ -9,6 +9,7 @@ import { MainContent2Component } from "../main-content-2/main-content-2.componen
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
+
 export class MainComponent {
 
 }

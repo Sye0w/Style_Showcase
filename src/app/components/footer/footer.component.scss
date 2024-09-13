@@ -25,21 +25,21 @@ section{
       text-decoration: none;
 
       .logo-bg{
-        width: calc(80px/16px) * 1rem;
-        height: calc(60px/16px) * 1rem;
+        width: rem(80px);
+        height: rem(60px);
         background-color: #fff;
         border-radius: .625rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: calc(10px/16px) * 1rem;
+        margin-right: rem(10px);
         transition: background-color 0.3s ease;
       }
     }
 
     li{
       img{
-        width: calc(54px/16px) * 1rem;
+        width: rem(54px);
       }
     }
 
